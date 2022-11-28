@@ -1,0 +1,43 @@
+
+
+    <h1>Emasivo 16</h1>
+    <button mat-raised-button 
+            color="primary"
+            class="boton-out"
+            (click)="logOut()">
+        Salir
+    </button>
+    <h2>Bienvenido:  {{ usuario.nombre | titlecase }}</h2>
+    <hr>
+    <br>
+    <mat-divider></mat-divider>
+
+    <div class="container-card">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+            <span class="login100-form-title p-b-49">
+                Usuarios
+            </span>
+            <button mat-stroked-button 
+                    color="warn"
+                    routerLink="users">
+                Ir
+            </button>
+        
+        </div>
+    </div>            
+         <br>
+      
+    <div class="container-card">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+            <span class="login100-form-title p-b-49">
+                Vehículos
+            </span>
+            <button mat-stroked-button 
+                    color="warn"
+                    routerLink="moviles">
+                Ir
+            </button>    
+        </div>
+    </div>
+                
+        

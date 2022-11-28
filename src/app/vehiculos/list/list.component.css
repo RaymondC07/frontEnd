@@ -1,0 +1,28 @@
+
+
+.container {
+
+
+    text-align:center;
+}
+
+.elemento {
+    height:200px;
+    width:500px;
+    margin:0px auto;
+}
+
+
+mat-card {
+
+    margin: 5px;
+    
+}
+
+.boton-salir{
+    margin-left: 90%;
+}
+
+
+
+

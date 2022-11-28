@@ -1,0 +1,50 @@
+
+
+<h1>
+    {{ ( user.email && user.nombre)? 'Editar Jugador' : 'Nuevo Jugador' }}
+</h1>
+
+
+
+<div fxLayout="row wrap" 
+    fxLayout.xs="column" 
+    fxLayoutGap="10px"
+    fxLayoutAlign="center">
+
+    <div fxFlex="45"
+
+         fxLayout="column">
+
+ 
+
+        <mat-form-field>
+
+            <mat-label>Nombre</mat-label>
+            <input matInput
+                   type="text"
+                   required>
+
+        </mat-form-field>
+
+            <div fxLayout="row" 
+                fxLayoutGap="10px"
+                fxLayout.xs="column">
+
+                <mat-form-field fxFlex="70">
+
+                    <mat-label>Patio</mat-label>
+                    <input matInput
+                        type="text"
+                        required>
+
+                </mat-form-field>
+
+ 
+        </div>
+
+
+        
+    </div>
+
+
+</div>

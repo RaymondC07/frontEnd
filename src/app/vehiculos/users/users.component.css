@@ -1,0 +1,14 @@
+.imagenTarjeta{
+
+    border-radius: 5%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.margen {
+    margin-left: 5%;
+}
+
+.margenBoton {
+    margin-left: 10%;
+}

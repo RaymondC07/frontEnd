@@ -1,0 +1,54 @@
+<h1>Listado de Usuarios</h1>
+<div class="boton-salir">
+   <button 
+        mat-raised-button           
+        routerLink="/list">
+        Volver
+    </button> 
+</div>
+
+<br>
+<hr>
+    
+
+<div class="container"
+    fxLayout="row wrap" 
+    fxLayout.xs="column"
+    fxLayoutAlign="space-around center"
+    fxLayoutGap="30px">
+
+    <div    class="elemento"         
+            fxFlex ='50'
+            *ngFor="let list of lista, let i = index" 
+            >
+            <mat-card>
+                <mat-card-header class="margen" > 
+                    <mat-card-title >Usuario, {{list.nombre | titlecase}} </mat-card-title>
+                </mat-card-header>
+                <mat-card-content class="margen">
+                    <span>Patio: {{ list.patio | uppercase }}</span>
+                    <br>
+                    <span>Email: {{ list.email }}</span>
+                </mat-card-content>
+                <mat-card-actions class="margen">
+                    <button mat-raised-button           
+                            color="accent"
+                            >
+                        Editar
+                    </button>
+                    
+                    <button mat-raised-button 
+                            class="margenBoton"
+                            color="primary"
+                            >
+                        Eliminar
+                    </button>
+            
+                </mat-card-actions>
+            
+            </mat-card>
+    </div>
+</div>
+        
+        
+
